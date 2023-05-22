@@ -8,8 +8,8 @@ namespace P01.Library
     {
         static void Main(string[] args)
         {
-            /*var library = new List<Book>(); How to sort them by Year */
-            var library = new Library();
+            var library = new List<Book>();/*How to sort them by Year */
+            /*var library = new Library(); 1st Exe */
             library.Add(new Book("Lord Of The Rings", 1954, new List<string>() { "J.Tolkien" }));
             library.Add(new Book("1984", 1949, new List<string>() { "George Orwell" }));
             library.Add(new Book("Harry Potter", 1997, new List<string>() { "J.K.Rowling" }));
