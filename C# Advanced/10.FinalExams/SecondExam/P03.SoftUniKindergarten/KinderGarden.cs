@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P03.SoftUniKindergarten
 {
-    internal class KinderGarden : IEnumerable<Child>
+    internal class KinderGarden 
     {
         public KinderGarden(string name, int capacity) 
         {
@@ -86,13 +86,5 @@ namespace P03.SoftUniKindergarten
                 Console.WriteLine(child);
             }
         }
-
-        public IEnumerator<Child> GetEnumerator()
-        {
-            return new KinderGardenIterator(children);
-        }
-
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
-       
     }
 }
