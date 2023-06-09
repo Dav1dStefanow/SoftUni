@@ -11,10 +11,12 @@ namespace P04.FirstAndReserveTeam
         public Team(string name) 
         { 
             Name = name;
+            firstTeam = new List<Person>();
+            reserveTeam = new List<Person>();
         }
         private string name;
-        private List<Person> firstTeam = new List<Person>();
-        private List<Person> reserveTeam = new List<Person>();
+        private List<Person> firstTeam;
+        private List<Person> reserveTeam;
 
         public string Name 
         {
