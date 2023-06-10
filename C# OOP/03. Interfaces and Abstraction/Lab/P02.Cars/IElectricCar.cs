@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace P02.Cars
 {
-    internal interface IElectricCar
+    public interface IElectricCar
     {
-        int Battery { get; protected set; }
+        int Battery { get; set; }
     }
 }

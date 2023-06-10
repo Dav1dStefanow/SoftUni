@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace P02.Cars
 {
-    internal interface ICar
+    public interface ICar
     {
-        string Model { get; protected set; }
-        string Color { get; protected set; }
-        public virtual string Start()
-        {
-            return "";
-        }
-        public virtual string Stop()
-        {
-            return "";
-        }
+        string Model { get; set; }
+        string Color { get; set; }
+        string Start();
+
+        string Stop();
+        
     }
 }

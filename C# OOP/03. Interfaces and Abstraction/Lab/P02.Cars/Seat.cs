@@ -7,37 +7,32 @@ using System.Threading.Tasks;
 
 namespace P02.Cars
 {
-    internal class Seat : ICar
+    public class Seat : ICar
     {
         public Seat(string model, string color) 
         {
-            this.model = model;
-            this.color = color;
+            this.Model = model;
+            this.Color = color;
         }
-        private string model;
-        public string color;
-        string ICar.Model
-        {
-            get { return this.model; }
-            set { this.model = value; }
-        }
-        string ICar.Color
-        {
-            get { return this.color; }
-            set { this.color = value; }
-        }
+
+        public string Model { get ; set ; }
+        public string Color { get ; set ; }
 
         public override string ToString()
         {
-            return $"{this.color} {this.GetType().Name} {this.model}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"{this.Color} {this.GetType().Name} {this.Model}");
+            sb.AppendLine(Start());
+            sb.AppendLine(Stop());
+            return sb.ToString();
         }
 
-        string ICar.Start()
+        public string Start()
         {
-            return "Engine start";
+            return "Engine start"; 
         }
 
-        string ICar.Stop()
+        public string Stop()
         {
             return "Breaaak!";
         }

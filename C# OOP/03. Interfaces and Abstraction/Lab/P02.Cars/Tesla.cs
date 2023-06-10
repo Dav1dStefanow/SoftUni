@@ -7,49 +7,38 @@ using System.Threading.Tasks;
 
 namespace P02.Cars
 {
-    internal class Tesla : ICar, IElectricCar
+    public class Tesla : ICar, IElectricCar
     {
         public Tesla(string model, string color, int battery) 
         {
-            this.model = model;
-            this.color = color;
-            this.battery = battery;
+            this.Model = model;
+            this.Color = color;
+            this.Battery = battery;
         }
 
-        private string model;
-        private string color;
-        private int battery;
+        public int Battery { get; set; }
+        
 
-        string ICar.Model
+        public string Model { get ; set ; }
+        public string Color { get; set; }
+
+        public override string ToString()
         {
-            get { return this.model; }
-            set { this.model = value; }
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"{this.Color} {this.GetType().Name} {this.Model} with {this.Battery} Batteries");
+            sb.AppendLine(Start());
+            sb.AppendLine(Stop());
+            return sb.ToString();
         }
 
-        string ICar.Color
-        {
-            get { return this.color; }
-            set { this.color = value; }
-        }
-
-        int IElectricCar.Battery
-        { 
-            get { return this.battery; }
-            set { this.battery = value; }
-        }
-
-        string ICar.Start()
+        public string Start()
         {
             return "Engine start";
         }
 
-        string ICar.Stop()
+        public string Stop()
         {
-            return ("Breaaak!");
-        }
-        public override string ToString()
-        {
-            return $"{this.color} {this.GetType().Name} {this.model}";
+            return "Breaaak!";
         }
     }
 }
