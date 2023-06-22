@@ -16,6 +16,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\P01.TestAxe\P01.TestAxe.csproj" />
+    <ProjectReference Include="..\P02.Database\P02.Database.csproj" />
+    <ProjectReference Include="..\P03.ExtendedDatabase\P03.ExtendedDatabase.csproj" />
+    <ProjectReference Include="..\P04.CarManager\P04.CarManager.csproj" />
+    <ProjectReference Include="..\P05.FightingArena\P05.FightingArena.csproj" />
   </ItemGroup>
 
 </Project>
