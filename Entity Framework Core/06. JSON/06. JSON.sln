@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductShopDatabase", "ProductShopDatabase\ProductShopDatabase.csproj", "{2487B7C1-BF4A-4F18-8AE1-E7E32FBA0201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDealerDatabase", "CarDealerDatabase\CarDealerDatabase.csproj", "{C356989C-CF63-4E9C-8F81-7B8B69D49814}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2487B7C1-BF4A-4F18-8AE1-E7E32FBA0201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2487B7C1-BF4A-4F18-8AE1-E7E32FBA0201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2487B7C1-BF4A-4F18-8AE1-E7E32FBA0201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2487B7C1-BF4A-4F18-8AE1-E7E32FBA0201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C356989C-CF63-4E9C-8F81-7B8B69D49814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C356989C-CF63-4E9C-8F81-7B8B69D49814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C356989C-CF63-4E9C-8F81-7B8B69D49814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C356989C-CF63-4E9C-8F81-7B8B69D49814}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7545E2A-6047-4BC4-BBDB-3F194A821CE7}
+	EndGlobalSection
+EndGlobal
